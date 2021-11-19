@@ -1,6 +1,7 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Footer from '../components/Footer/Footer';
 import Header from '../components/Header/Header';
+import Account from '../pages/Account/Account';
 import Admin from '../pages/Admin';
 import Home from '../pages/Home/Home';
 import Login from '../pages/Login/Login';
@@ -28,6 +29,9 @@ const Router = () => {
 				</Private>
 				<Private path='/dashboard'>
 					<Admin />
+				</Private>
+				<Private path='/account'>
+					<Account />
 				</Private>
 				<Route path='*' component={NotFound} />
 			</Switch>
