@@ -26,9 +26,15 @@ const Login = () => {
 		}
 	};
 
+	console.log(state);
+
 	useEffect(() => {
-		user && history.push(redirectToLocation);
-	}, [user, history, redirectToLocation]);
+		user &&
+			history.push({
+				pathname: redirectToLocation,
+				state: state?.from?.state,
+			});
+	}, [user, history, redirectToLocation, state?.from?.state]);
 
 	return (
 		<div className='container login'>
@@ -90,7 +96,9 @@ const Login = () => {
 						<div className='col-12'>
 							<p className='text-center mb-0'>
 								Have not account yet?{' '}
-								<Link to='/register'>Register</Link>
+								<Link to={{ pathname: '/register', state }}>
+									Register
+								</Link>
 							</p>
 						</div>
 					</div>

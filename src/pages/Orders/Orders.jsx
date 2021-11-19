@@ -39,7 +39,7 @@ const Orders = () => {
 					<Spinner animation='border' className='mt-5 m-auto' />
 				</Row>
 			) : data?.length ? (
-				<Table striped className='mb-5 pb-5'>
+				<Table responsive striped className='mb-5 pb-5'>
 					<thead>
 						<tr>
 							<th>Order Id</th>

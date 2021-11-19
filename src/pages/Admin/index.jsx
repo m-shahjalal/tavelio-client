@@ -3,6 +3,8 @@ import './Admin.css';
 import { Route, Switch, useRouteMatch } from 'react-router';
 import OrderManage from './OrderManage';
 import AddProduct from './AddProduct';
+import './Admin.css';
+import Dashboard from './Dashboard';
 
 const Admin = () => {
 	let { path, url } = useRouteMatch();
@@ -12,9 +14,7 @@ const Admin = () => {
 			<div style={{ marginLeft: '220px' }}>
 				<Switch>
 					<Route exact path={path}>
-						<h1 className='display-3 text-center pt-5'>
-							Welcome To DashBoard
-						</h1>
+						<Dashboard />
 					</Route>
 					<Route exact path={`${path}/manage-orders`}>
 						<OrderManage />

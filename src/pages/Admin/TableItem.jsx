@@ -27,6 +27,11 @@ const TableItem = ({ item, DeleteHandler }) => {
 						pending
 					</option>
 					<option
+						selected={item.status === 'approved'}
+						value='approved'>
+						approved
+					</option>
+					<option
 						selected={item.status === 'completed'}
 						value='completed'>
 						completed

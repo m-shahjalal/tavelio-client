@@ -19,10 +19,11 @@ const initialize = {
 
 const Purchase = () => {
 	const { state } = useLocation();
+	console.log(state);
 	const [inputs, setInputs] = useState(initialize);
 	const [loading, setLoading] = useState(false);
 	const history = useHistory();
-	if (!state) history.goBack();
+	// if (!state) history.goBack();
 	const { user } = useAuth();
 
 	const changeHandler = (e) => {

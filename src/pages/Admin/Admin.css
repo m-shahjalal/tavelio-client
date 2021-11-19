@@ -89,3 +89,19 @@
 .lh-tight {
 	line-height: 1.25;
 }
+
+.dashboard-bg {
+	background: linear-gradient(
+			90deg,
+			rgba(6, 20, 12, 0.701) 0%,
+			rgba(14, 0, 83, 0.6895133053221288) 97%
+		),
+		url(https://source.unsplash.com/BKM4T2BLlFE);
+	height: 100vh;
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+}
+.dashboard-col {
+	padding-top: 150px;
+}
