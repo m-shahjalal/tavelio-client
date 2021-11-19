@@ -7,7 +7,7 @@ let Axios = axios.create();
 Axios.interceptors.request.use((config) => {
 	const token = localStorage.getItem('jwt');
 	config.headers.Authorization = token ? `Bearer ${token}` : '';
-	config.baseURL = 'http://localhost:5000';
+	config.baseURL = 'https://salty-escarpment-24260.herokuapp.com';
 	return config;
 });
 
