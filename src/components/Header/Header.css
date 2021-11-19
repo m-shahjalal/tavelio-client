@@ -1,0 +1,28 @@
+.header {
+	@apply text-gray-600 border-b border-green-400 relative;
+}
+.header-inner {
+	@apply container mx-auto flex justify-between p-2 flex-row items-center;
+}
+.logo {
+	@apply flex font-medium items-center text-gray-900 md:mb-0;
+}
+.header-btn {
+	@apply inline-flex items-center bg-green-400 text-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-blue-900 rounded text-base mt-4 md:mt-0;
+}
+.hamburger {
+	@apply md:hidden;
+}
+.nav {
+	@apply md:ml-auto hidden md:flex flex-wrap items-center text-base justify-center;
+}
+.block-nav {
+	@apply absolute bg-blue-100 right-0 left-0 h-60 w-full flex items-center flex-col justify-center;
+	top: 49px;
+}
+.nav-link {
+	@apply mr-5 hover:text-gray-900 block my-2 text-center;
+}
+.header-thumb {
+	@apply w-8 h-8 object-cover rounded-full mr-4;
+}

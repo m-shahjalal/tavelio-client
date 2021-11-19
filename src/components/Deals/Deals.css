@@ -1,0 +1,20 @@
+.custom-header {
+	background-color: transparent;
+	position: absolute;
+	display: flex;
+	gap: 4px;
+	margin: 12px 0 0 12px;
+	font-size: 18px;
+}
+.custom-badge {
+	color: #292929d7;
+	background-color: #f8e1e1d7;
+	padding: 3px 10px;
+	border-radius: 3px;
+}
+.custom-card {
+	transition: all 0.3s ease;
+}
+.custom-card:hover {
+	box-shadow: 0px 5px 20px -5px rgba(0, 0, 0, 0.3);
+}

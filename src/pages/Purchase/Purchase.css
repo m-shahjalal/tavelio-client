@@ -1,0 +1,33 @@
+.purchase {
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	max-width: 800px;
+	padding: 0 20px;
+}
+
+.purchase img {
+	width: 100%;
+}
+
+.card-title {
+	justify-content: space-between;
+	margin-top: 25px;
+}
+
+.card-body {
+	background-color: #f7f1f1;
+}
+
+.footer {
+	background-color: #00bcd4;
+	color: white;
+}
+
+.footer:hover {
+	cursor: pointer;
+	background-color: #0097a7;
+}
+.order {
+	margin-top: 8px;
+}

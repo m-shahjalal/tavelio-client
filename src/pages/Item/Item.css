@@ -1,0 +1,22 @@
+.item-component {
+	@apply mx-auto  flex justify-center items-center flex-col rounded-xl my-10;
+	max-width: 1100px;
+	min-height: calc(100vh - 50px);
+}
+.item-image {
+	margin-top: 40px;
+	max-width: 600px;
+	width: 100%;
+	max-height: 400px;
+	height: auto;
+	border-radius: 10px;
+}
+.item-name {
+	@apply text-3xl text-blue-900 font-bold mt-10 mb-3;
+}
+.item-description {
+	@apply mb-7;
+}
+.item-btn {
+	@apply bg-green-400 py-1 px-5 border rounded-md text-white hover:bg-green-500;
+}

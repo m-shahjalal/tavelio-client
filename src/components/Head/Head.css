@@ -1,0 +1,7 @@
+.head-component {
+	@apply w-full h-44 flex justify-center items-center text-gray-100 text-3xl uppercase font-bold;
+	background-color: rgba(17, 24, 30, 0.01);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
